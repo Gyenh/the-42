@@ -3,10 +3,7 @@
 <% @users.each do |user| %>
 <p>Id :<%= user.id %></p>
 <p>Email :<%= user.email %></p>
-<%= link_to 'Edit', edit_user_path(user.id), class:"btn btn-warning btn-lg" %>
-<%= link_to 'Delete', user_path(user), class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <hr>
 
 <% end %>
-<%= link_to 'New', new_user_path, class:"btn btn-primary btn-lg" %>
