@@ -1,0 +1,18 @@
+<h1>Users#edit</h1>
+<%= form_for @user, url: {action: 'update'} do |f| %>
+  <div class="form-group">
+    <%= f.label :email, 'Email: ' %>
+    <%= f.text_field :email, class: 'form-control w-50', placeholder: 'Your email' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :password, 'Password' %>
+    <%= f.password_field :password, class: 'form-control w-50' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :password_confirmation, 'Confirmation: ' %>
+    <%= f.password_field :password_confirmation, class: 'form-control w-50' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'Register', class: 'btn btn-lg btn-primary btn-block w-50' %>
+  </div>
+<% end %>
